@@ -14,7 +14,8 @@ public class Area {
             }
             System.out.println("The area of a circle with a radius of " + radius +
                     " is: " + Circle.getArea(radius));
-        } catch(InputMismatchException e) {
+        }
+        catch(InputMismatchException e) {
             System.out.print("Invalid input. Re-start program.");
         }
     }

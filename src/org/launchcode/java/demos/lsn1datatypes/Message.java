@@ -4,11 +4,15 @@ public class Message {
 
     public static String getMessage(String lang) {
 
-        return switch (lang) {
-            case "sp" -> "¡Hola, Mundo!";
-            case "fr" -> "Bonjour, le monde!";
-            case "woh" -> "We out here!";
-            default -> "Hello, World!";
-        };
+        if (lang.equals("sp")) {
+            return "¡Hola, Mundo!";
+        } else if (lang.equals("fr")) {
+            return "Bonjour, le monde!";
+        }
+        else if(lang.equals("woh")){
+            return "We out here!";
+        }else {
+            return "Hello, World!";
+        }
     }
 }
